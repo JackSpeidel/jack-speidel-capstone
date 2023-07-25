@@ -1,9 +1,10 @@
-::before,
-::after {
-}
+@use './styles/partials/fonts' as *;
+
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montseratt', Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
