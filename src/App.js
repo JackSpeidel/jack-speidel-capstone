@@ -1,4 +1,5 @@
 import './App.scss';
+import { useAnimate } from "framer-motion";
 
 function App() {
   return (
@@ -9,3 +10,4 @@ function App() {
 }
 
 export default App;
+ 
