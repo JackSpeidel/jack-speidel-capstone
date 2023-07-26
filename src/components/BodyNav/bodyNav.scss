@@ -1,5 +1,32 @@
+@use '../../styles/partials/mixins' as *;
+
 
 .body-nav {
+    display: none;
 
-    padding-left: 2rem;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        position: fixed;
+    }
+
+
+    &__list {
+        @include tablet {
+            list-style: none;
+            border-right: 1px solid rgb(228, 228, 206, 0.5);
+            overflow: hidden;
+        }
+    }
+    
+    &__list-item {
+        @include tablet {
+            padding: 1rem 0;
+            transition: transform .5s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
 }
