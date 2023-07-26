@@ -10,8 +10,8 @@ const Nav = () => {
         </section>
         <section className='nav__right'>
             <ul className='nav__list'>
-                <li className='nav__list-item'>Support</li>
-                <li className='nav__list-item'>Login</li>
+                <li key={support} className='nav__list-item'>Support</li>
+                <li key={login} className='nav__list-item'>Login</li>
             </ul>
         </section>
     </div>
