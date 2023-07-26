@@ -1,0 +1,16 @@
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        align-self: center;
+        justify-content: center;
+    }
+
+    &__body {
+        align-self: center;
+        width: 75%;
+    }
+
+}

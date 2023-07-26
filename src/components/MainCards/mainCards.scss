@@ -1,12 +1,17 @@
+@use '../../styles/partials/mixins' as *;
 
 .cards {
     display: flex;
     justify-content: center;
 
     &__list {
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
+
+        @include tablet {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            width: 75%;
+        }
     }
 
     &__list-item {
@@ -14,5 +19,9 @@
         margin: 0 4rem;
         border: 1px solid rgb(228, 228, 206, 0.5);
         border-radius: 1vmax;
+        transition: transform .5s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
