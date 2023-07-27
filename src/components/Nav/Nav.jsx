@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
 
   return (
-    <div className='nav'>
+    <header className='nav'>
         <section className='nav__left'>
-            <h4>Logo goes here</h4>
+            <a className='nav__text--no-decor' href=""><h4>Logo goes here</h4></a>
         </section>
         <section className='nav__right'>
             <ul className='nav__list'>
-                <li className='nav__list-item'>Support</li>
-                <li className='nav__list-item'>Login</li>
+                <a className='nav__text--no-decor' href=''><li className='nav__list-item'>Support</li></a>
+                <a className='nav__text--no-decor' href=''><li className='nav__list-item'>Login</li></a>
             </ul>
         </section>
-    </div>
+    </header>
   )
 }
 
