@@ -6,12 +6,12 @@ const Nav = () => {
   return (
     <header className='nav'>
         <section className='nav__left'>
-            <a className='nav__text--no-decor' href=""><h4>Logo goes here</h4></a>
+            <Link className='nav__text--no-decor' to="/"><h4>Logo goes here</h4></Link>
         </section>
         <section className='nav__right'>
             <ul className='nav__list'>
-                <a className='nav__text--no-decor' href=''><li className='nav__list-item'>Support</li></a>
-                <a className='nav__text--no-decor' href=''><li className='nav__list-item'>Login</li></a>
+                <Link className='nav__text--no-decor' to='/support'><li className='nav__list-item'>Support</li></Link>
+                <Link className='nav__text--no-decor' to='/login'><li className='nav__list-item'>Login</li></Link>
             </ul>
         </section>
     </header>

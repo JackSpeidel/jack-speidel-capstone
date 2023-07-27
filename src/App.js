@@ -6,18 +6,26 @@ import BodyNav from './components/BodyNav/BodyNav';
 import MainCards from './components/MainCards/MainCards';
 import AboutUs from './components/AboutUs/AboutUs';
 import Articles from './components/Articles/Articles';
+import Login from './components/Login/Login';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        < Nav/>
-        {/* < AboutUs /> */}
-        < Articles />
-        {/* < BodyNav /> */}
-        {/* < MainCards /> */}
-
-      </BrowserRouter>
+        <BrowserRouter>
+            < Nav />
+            <Routes>
+                <Route path='/' element= {
+                    <>
+                        {/* < AboutUs /> */}
+                        < Articles />
+                    </>
+                }/>
+                <Route path='/login' element={<Login />}/>
+                <Route path='/register' element={<div>register</div>}/>
+                {/* < BodyNav /> */}
+                {/* < MainCards /> */}
+            </Routes>
+        </BrowserRouter>
     </div>
   );
 }
