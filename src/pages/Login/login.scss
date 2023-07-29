@@ -1,0 +1,17 @@
+.login {
+
+    &__container {
+        margin: 0 2rem;
+    }
+
+
+
+    &__input {
+        width: 10rem;
+    }
+
+    &__register-link{
+        text-decoration: none;
+        color: inherit;
+    }
+}

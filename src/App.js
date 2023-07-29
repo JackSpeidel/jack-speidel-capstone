@@ -6,7 +6,7 @@ import BodyNav from './components/BodyNav/BodyNav';
 import MainCards from './components/MainCards/MainCards';
 import AboutUs from './components/AboutUs/AboutUs';
 import Articles from './components/Articles/Articles';
-import Login from './components/Login/Login';
+import Login from './pages/Login/Login';
 
 function App() {
   return (
