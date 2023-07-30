@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useState } from 'react';
 
+const apiUrl = "http://localhost:5050";
+
 
 const Login = () => {
     const navigate = useNavigate();
@@ -12,12 +14,14 @@ const Login = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
+        const form = event.target;
+
         try {
             const { data } = await axios.post(
-                'http://localhost:5050/api/users/login',
+                `${apiUrl}/api/users/login`,
                 {
-                    email: event.target.email.value,
-                    password: event.target.password.value
+                    email: form.email.value,
+                    password: form.password.value
                 }
             );
 
@@ -47,7 +51,7 @@ const Login = () => {
             </div>
         </form>
         <section className='login__register'>
-            <Link className='login__register-link' to='/register'><p>Need an Account? Click here to register</p></Link>
+            <Link className='login__register-link' to='/register'><button>Need an Account? Click here to register</button></Link>
         </section>
     </div>
   )
