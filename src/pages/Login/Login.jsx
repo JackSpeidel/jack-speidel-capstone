@@ -49,6 +49,9 @@ const Login = () => {
                     <input className='login__input' name='password' type="password" id='password' placeholder="🤐   🤐   🤐   🤐   🤐   🤐   🤐" />
                 </label>
             </div>
+            <div>
+                <button to='/profile'>Login</button>
+            </div>
         </form>
         <section className='login__register'>
             <Link className='login__register-link' to='/register'><button>Need an Account? Click here to register</button></Link>

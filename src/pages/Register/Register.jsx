@@ -22,7 +22,7 @@ const Register = () => {
                 first_name: form.first_name.value,
                 last_name: form.last_name.value,
                 email: form.email.value,
-                password: form.password.value
+                password: form.password.value,
             });
 
             navigate('/login');
@@ -35,40 +35,41 @@ const Register = () => {
 
     return (
         <div>
-            <form className='login' onSubmit={handleSubmit} action="">
-                <h1 className='login__heading'>Register</h1>
-                <div className='login__1st-name-container'>
+            <form className='register' onSubmit={handleSubmit} action="">
+                <h1 className='register__heading'>Register</h1>
+                <div className='register__1st-name-container'>
                     <label htmlFor="first-name" >
                         First Name:
-                        <input className='login__input' name='password' type="text" id='first_name' placeholder="ex. Sir Thomas" />
+                        <input className='register__input' name='first_name' type="text" id='first_name' placeholder="ex. Sir Thomas" />
                     </label>
                 </div>
-                <div className='login__last-name-container'>
+                <div className='register__last-name-container'>
                     <label htmlFor="last-name" >
                         Last Name:
-                        <input className='login__input' name='last-name' type="text" id='last_name' placeholder="ex. de los Bunz" />
+                        <input className='register__input' name='last-name' type="text" id='last_name' placeholder="ex. de los Bunz" />
                     </label>
                 </div>
-                <div className='login__email-container'>
+                <div className='register__email-container'>
                     <label htmlFor="email" >
                         Email:
-                        <input className='login__input' name='email' type="text" id='email' placeholder='Enter Spam Receiver Here' />
+                        <input className='register__input' name='email' type="text" id='email' placeholder='Enter Spam Receiver Here' />
                     </label>
                 </div>
-                <div className='login__password-container'>
+                <div className='register__password-container'>
                     <label htmlFor="password" >
                         Password:
-                        <input className='login__input' name='password' type="password" id='password' placeholder="🤐   🤐   🤐   🤐   🤐   🤐   🤐" />
+                        <input className='register__input' name='password' type="password" id='password' placeholder="🤐   🤐   🤐   🤐   🤐   🤐   🤐" />
                     </label>
                 </div>
-                <div className='login__button-container'>
-                    <button className='login__button'>
+                <div className='register__button-container'>
+                    <button className='register__button'>
                         Register
                     </button>
+                    <p className='register__error'>{error}</p>
                 </div>
             </form>
-            <section className='login__register'>
-                <Link className='login__register-link' to='/login'><button>Already have a profile? Go Login!</button></Link>
+            <section className='register__login'>
+                <Link className='register__login-link' to='/login'><button>Already have a profile? Go Login!</button></Link>
             </section>
         </div>
     )
