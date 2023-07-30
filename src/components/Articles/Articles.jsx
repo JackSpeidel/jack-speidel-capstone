@@ -11,7 +11,7 @@ const Articles = () => {
 				    <img className='articles__image' src={amputee_with_bicycle} alt="" />
                 </div>
 				<div>
-					<h2 className='articles__heading'>Able in Style</h2>
+					<h2 className='articles__heading'>Able</h2>
                     <p className="articles__info">
                         <a className='articles__author' href="">Jack Speidel</a>
                         <time>2023-7-27 10:35</time>

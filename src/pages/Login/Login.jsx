@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 const apiUrl = "http://localhost:5050";
 
-
 const Login = () => {
     const navigate = useNavigate();
 
@@ -48,6 +47,9 @@ const Login = () => {
                     Password:
                     <input className='login__input' name='password' type="password" id='password' placeholder="🤐   🤐   🤐   🤐   🤐   🤐   🤐" />
                 </label>
+            </div>
+            <div>
+                <button to='/profile'>Login</button>
             </div>
         </form>
         <section className='login__register'>

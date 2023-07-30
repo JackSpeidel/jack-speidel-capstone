@@ -9,6 +9,8 @@ import Articles from './components/Articles/Articles';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Profile from './pages/Profile/Profile';
+import HomePage from './pages/HomePage/HomePage';
+import Community from './pages/Community/Community';
 
 function App() {
   return (
@@ -16,17 +18,13 @@ function App() {
         <BrowserRouter>
             < Nav />
             <Routes>
-                <Route path='/' element= {
-                    <>
-                        {/* < AboutUs /> */}
-                        < Articles />
-                    </>
-                }/>
+                <Route path='/' element= {< HomePage />}/>
+                <Route path='/info' element={< Articles />}/>
+                <Route path='/community' element={<Community />}/>
                 <Route path='/login' element={<Login />}/>
                 <Route path='/register' element={<Register />}/>
                 <Route path='/profile' element={<Profile />}/>
                 {/* < BodyNav /> */}
-                {/* < MainCards /> */}
             </Routes>
         </BrowserRouter>
     </div>
