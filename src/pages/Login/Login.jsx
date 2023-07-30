@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 const apiUrl = "http://localhost:5050";
 
-
 const Login = () => {
     const navigate = useNavigate();
 

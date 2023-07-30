@@ -9,7 +9,6 @@ const Profile = () => {
     const [firstName, setFirstName] = useState("");
     
     useEffect(() => {
-        
         const retrieveData = async () => {
             
             const token = sessionStorage.getItem('token')
