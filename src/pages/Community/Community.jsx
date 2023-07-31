@@ -7,7 +7,6 @@ const apiUrl = "http://localhost:5050";
 
 const Community = () => {
 
-
     useEffect(() => {
         const retrievePosts = async () => {
             axios.get()
@@ -19,7 +18,6 @@ const Community = () => {
         <section className='community__header'>
             <h1 className='community__title'>welcome welcome welcome</h1>
             <h3 className='community__subheading'>Please use this space to post & respond to each other with any questions/comments you may have about being newly disabled.</h3>
-            <h4>If you're new around here or need a refresher, click here for community guidelines.</h4>
         </section>
         <section className='community__posts'>
             <div className='community__post'>
@@ -33,8 +31,12 @@ const Community = () => {
                 <p className='community__post-content'>I can give you a hand!</p>
             </div>
         </section>
-        <section className='community__post-button-container'>
-            <button className='community__post-button'>Add a Post</button>
+        <section className='community__post-form'>
+            <form className='community__form' action="">
+                <label htmlFor="name">{}</label>
+                <textarea className='community__form-text' wrap='hard' type="textarea" placeholder="What's on your mind?" />
+                <button className='community__post-button'>Add a Post</button>
+            </form>
         </section>
     </div>
   )

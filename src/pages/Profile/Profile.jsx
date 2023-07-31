@@ -9,29 +9,35 @@ const apiUrl = "http://localhost:5050";
 const Profile = () => {
 
     const [firstName, setFirstName] = useState("");
+    const [error, setError] = useState(null)
+    const navigate = useNavigate()
+    
+    const token = sessionStorage.getItem('token')
+
     
     useEffect(() => {
-        const retrieveData = async () => {
-            
-            const token = sessionStorage.getItem('token')
+        if(!token || "") {
+            navigate('/login');
+            return
+        }
 
-            const { data } = await axios.get(`${apiUrl}/api/users/current`, {
+        const retrieveData = async () => {
+
+            const { data } = await axios
+            .get(`${apiUrl}/api/users/current`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
             })
 
-            console.log(data)
             setFirstName(data.first_name);
         }
 
         retrieveData();
     }, [])
 
-    const navigate = useNavigate()
     
     const handleLogout = () => {
-
         sessionStorage.removeItem('token');
         navigate('/Login');
     }

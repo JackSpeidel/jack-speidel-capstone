@@ -15,6 +15,10 @@ const Login = () => {
 
         const form = event.target;
 
+        if(!form.email.value || !form.password.value) {
+            return (<p>Please complete fields to log in</p>)
+        }
+
         try {
             const { data } = await axios.post(
                 `${apiUrl}/api/users/login`,
@@ -37,23 +41,23 @@ const Login = () => {
         <form className='login' onSubmit={handleSubmit} action="">
             <h1 className='login__heading'>Log In</h1>
             <div className='login__email-container'>
-                <label htmlFor="email" >
+                <label className='login__label' htmlFor="email" >
                     Email:
-                    <input className='login__input' name='email' type="text" id='email' placeholder='Enter Spam Receiver Here' />
+                    <input className='login__input' autoComplete='email' name='email' type="text" id='email' placeholder='Enter Spam Receiver Here' />
                 </label>
             </div>
             <div className='login__password-container'>
-                <label htmlFor="password" >
+                <label className='login__label' htmlFor="password" >
                     Password:
-                    <input className='login__input' name='password' type="password" id='password' placeholder="🤐   🤐   🤐   🤐   🤐   🤐   🤐" />
+                    <input className='login__input' autoComplete='current-password' name='password' type="password" id='password' placeholder="🤐   🤐   🤐   🤐   🤐   🤐   🤐" />
                 </label>
             </div>
-            <div>
-                <button to='/profile'>Login</button>
+            <div className='login__login-button'>
+                <button className='login__button' to='/profile'>Login</button>
             </div>
         </form>
         <section className='login__register'>
-            <Link className='login__register-link' to='/register'><button>Need an Account? Click here to register</button></Link>
+            <Link className='login__register-link' to='/register'><button className='login__button'>Need an Account? Click here to register</button></Link>
         </section>
     </div>
   )

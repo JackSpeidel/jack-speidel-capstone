@@ -7,7 +7,7 @@ const AboutUs = () => {
 				<h2>Who We Are</h2>
 			</section>
 			<section className='about__body'>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, quisquam aspernatur! Nam iusto, obcaecati animi aspernatur praesentium voluptate eius dolorum. Laudantium amet non cum odit mollitia inventore illum omnis magnam!</p>
+				<p>This site is for newly disabled individuals and those close to them who are looking for resources and a community of those like you.</p>
 			</section>
 		</div>
 	)

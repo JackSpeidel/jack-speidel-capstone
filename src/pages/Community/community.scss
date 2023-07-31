@@ -44,4 +44,26 @@
         padding: 0.6rem;
         box-shadow: 8px 8px 20px 2px rgb(107, 37, 144);
     }
+
+    &__post-form {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 5rem;
+        margin-right: 4rem;
+        width: 40%;
+    }
+
+    &__form-text {
+        padding: 2rem;
+        word-wrap: break-word;
+        word-break: break-all;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+    }
 }
