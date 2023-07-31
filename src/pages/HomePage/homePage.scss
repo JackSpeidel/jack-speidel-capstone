@@ -5,5 +5,11 @@
 
     &__heading{
         text-align: center;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    &__subheading{
+        text-align: center;
     }
 }
