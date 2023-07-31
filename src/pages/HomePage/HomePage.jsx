@@ -7,6 +7,7 @@ const HomePage = () => {
     <div className='home-page'>
         <h1 className='home-page__heading'>welcome!</h1>
         <AboutUs />
+        <h2 className='home-page__subheading'>What are you here for today?</h2>
         <MainCards />
     </div>
   )
