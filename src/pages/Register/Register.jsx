@@ -28,7 +28,7 @@ const Register = () => {
             navigate('/login');
 
         } catch (error) {
-            event.target.reset();
+            form.reset();
             setError(error.response.data)
         }
     }

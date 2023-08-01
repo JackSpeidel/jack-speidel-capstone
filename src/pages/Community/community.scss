@@ -59,11 +59,18 @@
         width: 40%;
     }
 
-    &__form-text {
-        padding: 2rem;
-        word-wrap: break-word;
-        word-break: break-all;
+    &__form-title {
         margin-bottom: 1rem;
         border-radius: 1rem;
+        padding: 0.5rem 2rem;
+        border: 0;
+    }
+
+    &__form-text {
+        height: 2rem;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        border: 0;
     }
 }

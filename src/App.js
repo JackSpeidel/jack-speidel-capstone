@@ -1,9 +1,8 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { useAnimate } from "framer-motion";
 import Nav from './components/Nav/Nav';
-import Articles from './components/Articles/Articles';
+import Articles from './pages/Articles/Articles';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import Profile from './pages/Profile/Profile';

@@ -6,10 +6,33 @@ import user_icon from '../../assets/images/user-svgrepo-com.svg'
 const apiUrl = "http://localhost:5050";
 
 const Community = () => {
+    
+    const [error, setError] = useState("");
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        const form = event.target;
+
+        if(!form.title || !form.content) {
+            return alert('Please complete fields to log in') // <p>Please complete fields to log in</p>
+        }
+
+        try {
+            await axios.post(`${apiUrl}/api/posts/post`, {
+                title: form.title.value,
+                content: form.content.value
+            })
+        } catch (error) {
+            form.reset();
+            setError(error)
+        }
+    }
+
 
     useEffect(() => {
         const retrievePosts = async () => {
-            axios.get()
+            axios.get(`${apiUrl}/posts`)
         }
     })
 
@@ -27,14 +50,15 @@ const Community = () => {
             </div>
             <div className='community__post'>
                 <img className='community__user-icon' src={user_icon} alt="user icon" />
-                <h4 className='community__post-author'>Django Reinhardt</h4>
-                <p className='community__post-content'>I can give you a hand!</p>
+                <h4 className='community__post-author'>Thaddeus Stevens</h4>
+                <p className='community__post-content'>I may be able to lend a hand</p>
             </div>
         </section>
         <section className='community__post-form'>
-            <form className='community__form' action="">
+            <form className='community__form' onSubmit={handleSubmit}>
                 <label htmlFor="name">{}</label>
-                <textarea className='community__form-text' wrap='hard' type="textarea" placeholder="What's on your mind?" />
+                <input className='community__form-title' placeholder='Title Your Post' wrap='hard' type='text' name='title' />
+                <textarea className='community__form-text' wrap='hard' type="textarea" placeholder="What's on your mind?" name='content' />
                 <button className='community__post-button'>Add a Post</button>
             </form>
         </section>
