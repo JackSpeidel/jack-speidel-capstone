@@ -15,10 +15,6 @@ const Login = () => {
 
         const form = event.target;
 
-        if(!form.email.value || !form.password.value) {
-            return (<p>Please complete fields to log in</p>)
-        }
-
         try {
             const { data } = await axios.post(
                 `${apiUrl}/api/users/login`,
@@ -54,6 +50,7 @@ const Login = () => {
             </div>
             <div className='login__login-button'>
                 <button className='login__button' to='/profile'>Login</button>
+                <p className='login__error'>{error}</p>
             </div>
         </form>
         <section className='login__register'>

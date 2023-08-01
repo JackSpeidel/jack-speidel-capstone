@@ -38,25 +38,25 @@ const Register = () => {
             <form className='register' onSubmit={handleSubmit} action="">
                 <h1 className='register__heading'>Register</h1>
                 <div className='register__1st-name-container'>
-                    <label htmlFor="first-name" >
+                    <label className='register__label' htmlFor="first-name" >
                         First Name:
                         <input className='register__input' name='first_name' type="text" id='first_name' placeholder="ex. Sir Thomas" />
                     </label>
                 </div>
                 <div className='register__last-name-container'>
-                    <label htmlFor="last-name" >
+                    <label className='register__label' htmlFor="last-name" >
                         Last Name:
                         <input className='register__input' name='last-name' type="text" id='last_name' placeholder="ex. de los Bunz" />
                     </label>
                 </div>
                 <div className='register__email-container'>
-                    <label htmlFor="email" >
+                    <label className='register__label' htmlFor="email" >
                         Email:
                         <input className='register__input' name='email' type="text" id='email' placeholder='Enter Spam Receiver Here' />
                     </label>
                 </div>
                 <div className='register__password-container'>
-                    <label htmlFor="password" >
+                    <label className='register__label' htmlFor="password" >
                         Password:
                         <input className='register__input' name='password' type="password" id='password' placeholder="🤐   🤐   🤐   🤐   🤐   🤐   🤐" />
                     </label>
@@ -69,7 +69,7 @@ const Register = () => {
                 </div>
             </form>
             <section className='register__login'>
-                <Link className='register__login-link' to='/login'><button>Already have a profile? Go Login!</button></Link>
+                <Link className='register__login-link' to='/login'><button className='register__button' >Already have a profile? Go Login!</button></Link>
             </section>
         </div>
     )
