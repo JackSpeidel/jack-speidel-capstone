@@ -1,0 +1,21 @@
+@use "./breakpoints" as *;
+
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+        @content
+    }
+};
+
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content
+    }
+}
+
+@mixin button {
+    background-color: azure;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    box-shadow: 8px 8px 20px 2px rgb(107, 37, 144);
+}

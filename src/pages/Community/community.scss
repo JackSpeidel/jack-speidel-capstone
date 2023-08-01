@@ -1,0 +1,76 @@
+.community {
+
+    margin: 0 2rem;
+
+    &__header {
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    &__posts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__post {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid grey;
+    }
+
+    &__post-author {
+        padding-right: 3rem;
+    }
+
+    &__user-icon {
+        max-width: 3rem;
+        max-height: 3rem;
+        background-color: grey;
+        border-radius: 50%;
+        margin-right: 3rem;
+    }
+
+    &__post-button-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        margin-right: 3rem;
+    }
+
+    &__post-button {
+        background-color: azure;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.6rem;
+        box-shadow: 8px 8px 20px 2px rgb(107, 37, 144);
+    }
+
+    &__post-form {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 5rem;
+        margin-right: 4rem;
+        width: 40%;
+    }
+
+    &__form-title {
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        padding: 0.5rem 2rem;
+        border: 0;
+    }
+
+    &__form-text {
+        height: 2rem;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        border: 0;
+    }
+}

@@ -1,0 +1,45 @@
+.login {
+
+    &__container {
+        margin: 0 2rem;
+    }
+
+    &__input {
+        width: 10rem;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        margin-left: 2rem;
+    }
+
+    &__email-container {
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    &__register {
+        margin: 1rem 0;
+    }
+
+    &__register-link{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__login-button {
+        margin-top: 1rem;
+    }
+
+    &__button {
+        font-size: 1rem;
+        background-color: azure;
+        color: #3c5da4;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 6px 6px 15px 1px rgb(107, 37, 144);
+    }
+}

@@ -1,0 +1,59 @@
+.register {
+    margin: 0 1rem;
+
+    &__input {
+        width: 10rem;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        margin-left: 2rem;
+    }
+
+    &__1st-name-container {
+        margin-bottom: 1rem;
+    }
+
+    &__last-name-container {
+        margin-bottom: 1rem;
+    }
+
+    &__email-container {
+        margin-bottom: 1rem;
+    }
+
+    &__password-container {
+        margin-bottom: 2rem;
+    }
+
+    &__label {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    &__register {
+        margin: 1rem 0;
+    }
+
+    &__register-link{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__error{
+        color: rgb(166, 223, 232);
+
+    }
+
+    &__login {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    &__button {
+        font-size: 1rem;
+        color: #3c5da4;
+        background-color: azure;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        box-shadow: 6px 6px 15px 1px rgb(107, 37, 144);
+    }
+}
