@@ -25,11 +25,14 @@
         border-radius: 1rem;
         text-align: center;
         margin: 2rem 4rem 0 4rem;
+        background-color: beige;
+        color: rgb(32, 32, 32);
     }
 
     &__link {
         font-weight: 600;
         text-decoration: none;
-        color: inherit;
+        color: #5172bb;
+        text-decoration: underline;
     }
 }

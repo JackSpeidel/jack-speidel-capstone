@@ -3,8 +3,20 @@
     margin: 0 2rem;
 
     &__header {
-        margin-bottom: 4rem;
         text-align: center;
+    }
+
+    &__title {
+        font-size: 3rem;
+    }
+
+    &__subheading {
+        font-size: 1.25rem;
+    }
+
+    &__post-heading {
+        text-align: center;
+        font-size: 1.25rem;
     }
 
     &__posts {
@@ -47,14 +59,16 @@
 
     &__post-form {
         display: flex;
-        justify-content: end;
+        justify-content: center;
+        margin-bottom: 3rem;
+        flex-direction: column;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        margin-top: 5rem;
+        justify-content: center;
+        margin-top: 2rem;
         margin-right: 4rem;
         width: 40%;
     }

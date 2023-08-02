@@ -42,5 +42,17 @@
         background-color: rgb(228, 228, 206);
         border-radius: 50%;
     }
+}
 
+.nav.fixed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    transition: .5s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: inherit;
+    border-bottom: 2px solid rgb(228, 228, 206);
 }

@@ -1,0 +1,18 @@
+.progress {
+
+    &__main-wrapper {
+        background-color: black;
+        height: 3px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    &__main-style {
+        height: 10px;
+        background-color: #3c5da4;
+        width: 15%;
+    }
+}

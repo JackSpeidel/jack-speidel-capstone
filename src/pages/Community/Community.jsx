@@ -42,6 +42,15 @@ const Community = () => {
             <h1 className='community__title'>welcome welcome welcome</h1>
             <h3 className='community__subheading'>Please use this space to post & respond to each other with any questions/comments you may have about being newly disabled.</h3>
         </section>
+        <section className='community__post-form'>
+            <h3 className='community__post-heading'>We would love to hear from you</h3>
+            <form className='community__form' onSubmit={handleSubmit}>
+                <label htmlFor="name">{}</label>
+                <input className='community__form-title' placeholder='Title Your Post' wrap='hard' type='text' name='title' />
+                <textarea className='community__form-text' wrap='hard' type="textarea" placeholder="What's on your mind?" name='content' />
+                <button className='community__post-button'>Add a Post</button>
+            </form>
+        </section>
         <section className='community__posts'>
             <div className='community__post'>
                 <img className='community__user-icon' src={user_icon} alt="user icon" />
@@ -54,14 +63,7 @@ const Community = () => {
                 <p className='community__post-content'>I may be able to lend a hand</p>
             </div>
         </section>
-        <section className='community__post-form'>
-            <form className='community__form' onSubmit={handleSubmit}>
-                <label htmlFor="name">{}</label>
-                <input className='community__form-title' placeholder='Title Your Post' wrap='hard' type='text' name='title' />
-                <textarea className='community__form-text' wrap='hard' type="textarea" placeholder="What's on your mind?" name='content' />
-                <button className='community__post-button'>Add a Post</button>
-            </form>
-        </section>
+
     </div>
   )
 }

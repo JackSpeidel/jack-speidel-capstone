@@ -17,6 +17,10 @@
         border-radius: 1rem;
     }
 
+    &__heading {
+        font-size: 2rem;
+    }
+
     &__info {
         display: flex;
         gap: .8rem;
@@ -25,9 +29,11 @@
     &__author {
         text-decoration: none;
         color: #f0c5ec;
+        font-size: 1.25rem;
     }
 
     &__summary {
         line-height: 1.5rem;
+        font-size: 1.25rem;
     }
 }

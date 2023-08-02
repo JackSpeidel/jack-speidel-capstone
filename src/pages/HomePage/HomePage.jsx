@@ -2,6 +2,7 @@ import './homePage.scss';
 import AboutUs from '../../components/AboutUs/AboutUs';
 import MainCards from '../../components/MainCards/MainCards';
 import AnimatedWelcome from '../../components/AnimatedWelcome/AnimatedWelcome';
+import ScrollArrow from '../../components/ScrollArrow/ScrollArrow';
 import { motion } from 'framer-motion';
 
 
@@ -14,7 +15,8 @@ const HomePage = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 3 }}
             >
-                <AboutUs />
+            < ScrollArrow />
+            <AboutUs />
             </motion.div>
             <motion.div
                 initial={{ opacity: 0 }}
