@@ -49,10 +49,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
-    transition: .5s ease-in-out;
+    transition: 3s ease-in-out;
     position: fixed;
     width: 100%;
     z-index: 10;
     background: inherit;
     border-bottom: 2px solid rgb(228, 228, 206);
+    top: 0;
+    background-image: linear-gradient(to right, rgb(83, 72, 228) , rgb(147, 102, 193));
 }

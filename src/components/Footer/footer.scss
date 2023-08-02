@@ -1,0 +1,46 @@
+.footer {
+
+    background-image: linear-gradient(to right, rgb(147, 102, 193), rgb(83, 72, 228));
+    border-top: 2px solid rgb(228, 228, 206);
+    padding-bottom: 2rem;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        padding-left: 8rem;
+        gap: 10rem;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    &__subheading{
+        margin: 0;
+    }
+
+    &__contact-subheading{
+        margin-bottom: -0.5rem;
+    }
+
+    &__body {
+        margin: 0;
+        line-height: 1.25rem;
+    }
+
+    &__contact-body {
+        margin: 1rem 0 0 0;
+        line-height: 1.25rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #37485e;
+
+        &:hover{
+            color: #3366CC;
+        }
+    }
+}

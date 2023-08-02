@@ -1,9 +1,10 @@
 .community {
 
-    margin: 0 2rem;
+    margin: 8rem 2rem 0 2rem;
 
     &__header {
         text-align: center;
+        margin-bottom: 10rem;
     }
 
     &__title {
@@ -17,11 +18,14 @@
     &__post-heading {
         text-align: center;
         font-size: 1.25rem;
+        // position: relative;
+        right: 2rem;
     }
 
     &__posts {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20rem;
     }
 
     &__post {
@@ -44,7 +48,7 @@
 
     &__post-button-container {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 1rem;
         margin-right: 3rem;
     }
@@ -59,15 +63,15 @@
 
     &__post-form {
         display: flex;
-        justify-content: center;
+        align-items: center;
         margin-bottom: 3rem;
         flex-direction: column;
+        margin-top: -2rem;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-top: 2rem;
         margin-right: 4rem;
         width: 40%;
