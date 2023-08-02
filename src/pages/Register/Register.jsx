@@ -34,7 +34,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className='register__height'>
             <form className='register' onSubmit={handleSubmit} action="">
                 <h1 className='register__heading'>Register</h1>
                 <div className='register__1st-name-container'>

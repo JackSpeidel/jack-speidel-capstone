@@ -1,5 +1,6 @@
 import './community.scss';
 import { useEffect, useState } from 'react';
+import AnimatedWelcome from '../../components/AnimatedWelcome/AnimatedWelcome';
 import axios from 'axios';
 import user_icon from '../../assets/images/user-svgrepo-com.svg';
 import thaddeus from '../../assets/images/thaddeus_stevens_photo.webp'
@@ -40,6 +41,7 @@ const Community = () => {
   return (
     <div className='community'>
         <section className='community__header'>
+            {/* < AnimatedWelcome className='community__welcome' text='Welcome to upLift!' /> */}
             <h1 className='community__title'>Welcome Welcome Welcome</h1>
             <h3 className='community__subheading'>Please use this space to post & respond to each other with any questions/comments you may have about being newly disabled.</h3>
         </section>

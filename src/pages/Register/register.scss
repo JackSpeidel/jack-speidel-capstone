@@ -1,5 +1,9 @@
 .register {
     margin: 0 1rem;
+    
+    &__height{
+        height: 63vh;
+    }
 
     &__input {
         width: 10rem;

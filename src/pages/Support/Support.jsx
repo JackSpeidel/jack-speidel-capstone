@@ -25,8 +25,9 @@ const Support = () => {
                     <p>Substance Abuse and Mental Health Services Administration</p>
                 </Link>
             </section>
-            <section className='support__card'>
-                <h4>If you just need some tech support, please reach out to <span >{'support@uplift.biz'}</span></h4>
+            <section className='support__card-email'>
+                 <h4>If you just need some tech support, please email me here:</h4>
+                <h4 className='support__link' target='_blank' rel='noreferrer' onClick={() => window.location = 'mailto:speideljackson@gmail.com'}>speideljackson@gmail.com</h4>
             </section>
         </section>
     </div>

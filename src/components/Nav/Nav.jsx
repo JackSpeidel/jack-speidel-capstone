@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useState } from 'react';
 import user_profile from '../../assets/images/user-alt-1-svgrepo-com.svg'
-import ScrollIndicator from '../ScrollIndicator/ScrollIndicator';
-import ScrollArrow from '../ScrollArrow/ScrollArrow';
+
 
 const svgVariants = {
     hidden: { rotate: -360 },
@@ -34,7 +33,7 @@ const Nav = () => {
     const [fix, setFix] = useState(false);
     
     const stickyNav = () => {
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 80) {
             setFix(true);
         } else {
             setFix(false);

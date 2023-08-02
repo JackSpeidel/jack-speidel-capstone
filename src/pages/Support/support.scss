@@ -1,6 +1,8 @@
 .support {
     display: flex;
     flex-direction: column;
+    height: 120vh;
+
 
     &__heading {
         font-size: 3rem;
@@ -34,5 +36,15 @@
         text-decoration: none;
         color: #5172bb;
         text-decoration: underline;
+    }
+
+    &__card-email{
+        flex-direction: row;
+        border: 3px solid rgb(228, 228, 206);
+        border-radius: 1rem;
+        text-align: center;
+        margin: 2rem 4rem 0 4rem;
+        background-color: beige;
+        color: rgb(32, 32, 32);
     }
 }
