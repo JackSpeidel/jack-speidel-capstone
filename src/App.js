@@ -9,6 +9,7 @@ import Profile from './pages/Profile/Profile';
 import HomePage from './pages/HomePage/HomePage';
 import Community from './pages/Community/Community';
 import Support from './pages/Support/Support';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
                 <Route path='/support' element={<Support />}/>
                 {/* < BodyNav /> */}
             </Routes>
+            < Footer />
         </BrowserRouter>
     </div>
   );
