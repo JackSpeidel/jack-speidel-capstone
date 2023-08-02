@@ -7,18 +7,24 @@
         margin-bottom: 3rem;
     }
 
+    &__cards{
+        margin-bottom: 20rem;
+    }
+
     &__logout-container {
         display: flex;
         justify-content: flex-end;
-        margin-top: 3rem;
-        margin-right: 5rem;
+        position: absolute;
+        top: 40rem;
+        right: 10rem;
     }
 
     &__logout-button {
         background-color: azure;
+        font-size: 1.5rem;
         border: 0;
         border-radius: 0.5rem;
-        padding: 0.6rem;
+        padding: 1rem;
         box-shadow: 8px 8px 20px 2px rgb(107, 37, 144);
     }
 }
