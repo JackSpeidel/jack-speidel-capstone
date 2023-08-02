@@ -3,6 +3,9 @@
     background-image: linear-gradient(to right, rgb(147, 102, 193), rgb(83, 72, 228));
     border-top: 2px solid rgb(228, 228, 206);
     padding-bottom: 2rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 
     &__container{
         display: flex;
@@ -14,7 +17,7 @@
     &__column {
         display: flex;
         flex-direction: column;
-        width: 25%;
+        width: 27%;
     }
 
     &__subheading{
