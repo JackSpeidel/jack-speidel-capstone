@@ -10,15 +10,14 @@
     &__container{
         display: flex;
         flex-direction: row;
-        padding-left: 8rem;
-        gap: 10rem;
+        padding-left: 7rem;
         justify-content: space-between;
     }
 
     &__column {
         display: flex;
         flex-direction: column;
-        width: 27%;
+        width: 30%;
     }
 
     &__subheading{
