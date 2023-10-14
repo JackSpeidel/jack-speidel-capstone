@@ -41,6 +41,7 @@
     &__post-author {
         width: 1%;
         padding-right: 10rem;
+        line-height: 1.5rem;
     }
 
     &__user-icon {
@@ -94,5 +95,13 @@
         margin-bottom: 1rem;
         border-radius: 1rem;
         border: 0;
+    }
+
+    &__post-title {
+        margin-bottom: 0rem;
+    }
+
+    &__post-content {
+        margin-top: 0.5rem;
     }
 }

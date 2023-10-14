@@ -2,8 +2,6 @@ import './community.scss';
 import { useEffect, useState } from 'react';
 import AnimatedPostWelcome from '../../components/AnimatedPostWelcome/AnimatedPostWelcome';
 import axios from 'axios';
-import user_icon from '../../assets/images/user-svgrepo-com.svg';
-import thaddeus from '../../assets/images/thaddeus_stevens_photo.webp'
 
 const apiUrl = "http://localhost:5050";
 
@@ -11,8 +9,6 @@ const Community = () => {
 
     const [error, setError] = useState("");
     const [posts, setPosts] = useState([]);
-
-    console.log(posts);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -77,7 +73,10 @@ const Community = () => {
                         <div key={post.id} className='community__post'>
                             <img className='community__user-icon' src={post.user_photo} alt="user icon" />
                             <h4 className='community__post-author'>{post.first_name} {post.last_name}</h4>
-                            <p className='community__post-content'>{post.content}</p>
+                            <section className='community__post-content-div'>
+                                <h4 className='community__post-title'>{post.title}</h4>
+                                <p className='community__post-content'>{post.content}</p>
+                            </section>
                         </div>
                     )
                 })}
